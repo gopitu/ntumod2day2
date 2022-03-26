@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>Gopi's AI Explorer!</h1>
+        <h2>Credit Card Upgrade Predictor</h2>
+        <form action="http://127.0.0.1:5000" method="post">
+            <p
+                >Please input Monthly Purchases:
+                <input type="number" step="1" name="purchases" />
+            </p>
+            <p>
+                Please input number of Supplementary Card:
+                <input type="number" step="1" name="suppcard" />
+            </p>
+            <p>
+                <input type="submit" value="Predict" />
+            </p>
+        </form>
+        <p>DecisionTree: {{result1}}</p>
+        <p>Random Forest: {{result2}}</p>
+        <p>XGBoost: {{result3}}</p>
+    </body>
+</html>
